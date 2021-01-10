@@ -1,0 +1,135 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="content-box">
+
+        <div class="row">
+            <div class="border-right max-5">
+                <div class="row p-4">
+                    <h5 class="mr-5 azul"><strong>Historial de facturas</strong></h5>
+                    <div class="offset-2"></div>
+                    <div>
+                        <button type="button" class="btn btn-secondary" >Anual</button>
+                        <button type="button" class="btn btn-primary ml-4" >Mensual</button>
+                    </div>
+                </div>
+                <img class="img-fluid max-7 m-1" src="{% static 'web/historial_mensual.JPG' %}">
+            </div>
+            <div class="p-2 max-5">
+                <h5 class="border-left azul"><strong>Resumen noviembre:</strong></h5>
+                <table class="table">
+                  <thead>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alquiler</td>
+                      <td></td>
+                      <td>€1050,00</td>
+                    </tr>
+                    <tr>
+                      <td>Luz</td>
+                      <td></td>
+                      <td>€101,86</td>
+                    </tr>
+                    <tr>
+                      <td>Agua</td>
+                      <td></td>
+                      <td>€25,00</td>
+                    </tr>
+                    <tr>
+                      <td>Otros</td>
+                      <td></td>
+                      <td>€50,00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br><hr>
+                <h5>Total:</h5>
+                <p style="color: blue;">€1226,86</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h5 class="azul"><strong>Tablón de anuncios</strong></h5>
+        <div class="border-bottom">
+            <h6 class="azul">Feliz año nuevo!</h6>
+            <p>Felicidades a todos de parte <br>de la administracion</p>
+        </div>
+        <div class="border-bottom">
+            <h6 class="azul">Recordatorio</h6>
+            <p>Recuerden que el día...</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="content-box">
+        <h5 class="azul border-bottom m-4"><strong>Contactos</strong></h5>
+        <img class="max-7" src="{% static 'web/contactos.JPG' %}">
+    </div>
+
+    <div class="content-box">
+        <h5 class="azul m-4"><strong>Disponibilidad de servicios:</strong></h5>
+                <table class="table azul">
+                  <thead>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Nombre</td>
+                      <td></td>
+                      <td></td>
+                      <td>Horario</td>
+                      <td></td>
+                      <td></td>
+                      <td>Disponibilidad</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Gimnasio</td>
+                      <td></td>
+                      <td></td>
+                      <td>6:00 - 24:00</td>
+                      <td></td>
+                      <td></td>
+                      <td>Media</td>
+                      <td></td>
+                      <td></td>
+                      <td><button type="button" class="btn btn-primary ml-4 mr-4" >Reserva</button></td>
+                    </tr>
+                    <tr>
+                      <td>Pista de tenis</td>
+                      <td></td>
+                      <td></td>
+                      <td>6:00 - 24:00</td>
+                      <td></td>
+                      <td></td>
+                      <td>Media</td>
+                      <td></td>
+                      <td></td>
+                      <td><button type="button" class="btn btn-primary ml-4 mr-4" >Reserva</button></td>
+                    </tr>
+                    <tr>
+                      <td>Restaurante "El Olivo"</td>
+                      <td></td>
+                      <td></td>
+                      <td>13:00 - 1:00</td>
+                      <td></td>
+                      <td></td>
+                      <td>Alta</td>
+                      <td></td>
+                      <td></td>
+                      <td><button type="button" class="btn btn-primary ml-4 mr-4" >Reserva</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+    </div>
+
+</div>
+
+{% endblock content %}
