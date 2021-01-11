@@ -1,0 +1,87 @@
+{% extends "web/base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="content-box max-9">
+    <form>
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+            <label for="inlineFormCustomSelect"><strong>Muestra facturas:</strong></label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>últimos 6 meses</option>
+            <option value="1">todas</option>
+            <option value="2">solo pagadas</option>
+            <option value="3">solo no pagadas</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    <table class="table table-hover mt-4">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Mes</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Estado</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td>Noviembre</td>
+          <td>€1226,86</td>
+          <td class="rojo">no pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><button type="button" class="btn btn-primary" >Pagar ahora</button></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Octubre</td>
+          <td>€1378,86</td>
+          <td class="verde">pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><span class="offset-1"></span><img height="30" src="{% static 'web/ok.png' %}"></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Septiembre</td>
+          <td>€1452,76</td>
+          <td class="verde">pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><span class="offset-1"></span><img height="30" src="{% static 'web/ok.png' %}"></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Agosto</td>
+          <td>€1592,01</td>
+          <td class="verde">pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><span class="offset-1"></span><img height="30" src="{% static 'web/ok.png' %}"></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Julio</td>
+          <td>€1492,21</td>
+          <td class="verde">pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><span class="offset-1"></span><img height="30" src="{% static 'web/ok.png' %}"></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>Junio</td>
+          <td>€1395,36</td>
+          <td class="verde">pagada</td>
+          <td><a href="#"><img height="30" src="{% static 'web/pdf.png' %}"></a></td>
+          <td><span class="offset-1"></span><img height="30" src="{% static 'web/ok.png' %}"></td>
+        </tr>
+      </tbody>
+    </table>
+
+  <br><br>
+
+</div>
+
+{% endblock content %}

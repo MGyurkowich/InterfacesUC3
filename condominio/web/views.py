@@ -12,3 +12,20 @@ def profile(request):
 
 def messages(request):
     return render(request, 'web/messages.html')
+
+
+def bills(request):
+    return render(request, 'web/bills.html')
+
+
+def payments(request):
+    return render(request, 'web/payment.html')
+
+
+def calendar(request):
+    return render(request, 'web/calender.html')
+
+
+def ajustes(request):
+    return render(request, 'web/settings.html')
+

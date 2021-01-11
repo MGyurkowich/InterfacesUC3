@@ -22,7 +22,7 @@
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
             <div class="container-fluid d-flex flex-column p-0">
-                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="{% url 'web-home' %}">
                     <div class="sidebar-brand-icon rotate-n-15"></div>
                     <div class="sidebar-brand-text mx-3"><span>UC3 APP</span></div>
                 </a>
@@ -31,10 +31,10 @@
                     <li class="nav-item"><a class="nav-link" href="{% url 'web-home' %}"><i class="fas fa-home"></i><span>Inicio</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'web-profile' %}"><i class="fas fa-user"></i><span>Perfil</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'web-msg' %}"><i class="fas fa-envelope"></i><span>Mensajes</span><span class="badge badge-danger badge-counter">1</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-list"></i><span>Mis facturas</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-credit-card"></i><span>Monedero</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-calendar"></i><span>Calendario</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-cog"></i><span>Ajustes</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'web-bills' %}"><i class="fas fa-list"></i><span>Mis facturas</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'web-pm' %}"><i class="fas fa-credit-card"></i><span>Monedero</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'web-cal' %}"><i class="fas fa-calendar"></i><span>Calendario</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'web-aju' %}"><i class="fas fa-cog"></i><span>Ajustes</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"></div>
             </div>
@@ -58,7 +58,7 @@
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Maciej Gyurkowich</span><img class="border rounded-circle img-profile" src="{% static 'web/foto.jpg' %}"></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="{% url 'web-profile' %}"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
+                                    <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="{% url 'web-profile' %}"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" href="{% url 'web-aju' %}"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
                                     <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cerrar sesión</a></div>
                                 </div>
                     </li>
