@@ -2,8 +2,44 @@
 {% block content %}
 
 <div class="content-box max-5">
-    <h5 class="border-bottom">Ajustes</h5>
-    
+    <h5 class="border-bottom mb-4">Ajustes</h5>
+
+    <li class="list-group-item">
+        Desactivar notificaciones
+        <div class="pull-right">
+            <input type="checkbox"/>
+        </div>
+    </li>
+    <li class="list-group-item">
+        Enviar facturas por email
+        <div class="pull-right">
+            <input type="checkbox"/>
+        </div>
+    </li>
+    <li class="list-group-item">
+        Sicronizar calendario con la cuenta Google
+        <div class="pull-right">
+            <input type="checkbox"/>
+        </div>
+    </li>
+    <li class="list-group-item">
+        Verificación doble al iniciar sesión
+        <div class="pull-right">
+            <input type="checkbox"/>
+        </div>
+    </li>
+
+    <div class="float-sm-right">
+        <button type="button" class="btn btn-primary ml-4 mr-4 mt-4">Actualizar</button>
+    </div>
+
+    <span>
+        <br>
+        <br>
+        <br>
+    </span>
+
+
 </div>
 
 {% endblock content %}

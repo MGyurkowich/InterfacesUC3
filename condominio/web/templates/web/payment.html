@@ -3,27 +3,55 @@
 
 
 <div class="content-box max-7">
-    <h4 class="border-bottom">Monedero</h4>
-    <div class="mt-4 mb-4">
-        <h5>Cuentas Bancarias:</h5>
-        <p class="rojo ml-4">No se han encontrado cuentas bancarias asociadas</p>
-        <span class="m-4"></span>
-        <h5>Tarjetas:</h5>
+    <h4 class="mb-4 border-bottom">Monedero</h4>
 
-        <p class="azul ml-4"><input type="checkbox" class="mr-3">MasterCard **** **** **** 1234 <span class="ml-4"><span class="ml-4"></span></span><button type="button" class="btn btn-primary ml-4" >Editar</button></p>
-        <p class="azul ml-4"><input type="checkbox" class="mr-3">VISA **** **** **** 5678 <span class="offset-1"></span><button type="button" class="btn btn-primary" >Editar</button></p>
+    <table class="borderless ml-4">
+        <tbody>
+        <tr>
+            <td><h5 class="azul">Cuentas Bancarias:</h5></td>
+        </tr>
+        <tr>
+            <td><p class="rojo ml-4">No se han encontrado cuentas bancarias asociadas</p></td>
 
-        <span class="m-4"></span>
-        <h5>PayPal:</h5>
-
-        <p class="azul ml-4"><input type="checkbox" class="mr-3">maciej.gyurkowich@gmail.com <span class="ml-4"><span class="ml-4"></span></span><button type="button" class="btn btn-primary ml-4" >Editar</button></p>
-    </div>
+        </tr>
+        <tr><td><span class="m-2"></span> </td></tr>
+        <tr>
+            <td><h5 class="azul">Tarjetas:</h5></td>
+        </tr>
+        <tr>
+            <td><span class="ml-4"></span><input type="checkbox"><span class="ml-2"></span> MasterCard **** **** **** 1234</td>
+            <td></td>
+            <td>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </td>
+        </tr>
+        <tr><td><span class="m-2"></span> </td></tr>
+                <tr>
+            <td><span class="ml-4"></span><input type="checkbox"><span class="ml-2"></span> VISA **** **** **** 5678 </td>
+            <td></td>
+            <td>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </td>
+        </tr>
+        <tr><td><span class="m-2"></span> </td></tr>
+         <tr>
+            <td><h5 class="azul">PayPal:</h5></td>
+        </tr>
+        <tr>
+            <td><span class="ml-4"></span><input type="checkbox"><span class="ml-2"></span> maciej.gyurkowich@gmail.com</td>
+            <td></td>
+            <td>
+                <button type="button" class="btn btn-primary">Editar</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 
     <br><br>
-        <div class="float-sm-right">
-            <button type="button" class="btn btn-danger ml-4 mr-4" >Eliminar método de pago</button>
-            <button type="button" class="btn btn-primary ml-4 mr-4" >Agregar nuevo</button>
-        </div>
+    <div class="float-sm-right">
+        <button type="button" class="btn btn-danger ml-4 mr-4">Eliminar método de pago</button>
+        <a href="{% url 'web-np' %}"><button type="button" class="btn btn-primary ml-4 mr-4">Agregar nuevo</button></a>
+    </div>
 
     <span>
         <br>

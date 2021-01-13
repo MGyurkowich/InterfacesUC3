@@ -29,3 +29,6 @@ def calendar(request):
 def ajustes(request):
     return render(request, 'web/settings.html')
 
+def new_met_pago(request):
+    return render(request, 'web/newpmeth.html')
+

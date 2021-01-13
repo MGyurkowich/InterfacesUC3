@@ -8,5 +8,6 @@ urlpatterns = [
     path('facturas/', views.bills, name='web-bills'),
     path('monedero/', views.payments, name='web-pm'),
     path('calendario/', views.calendar, name='web-cal'),
-    path('ajustes/', views.ajustes, name='web-aju')
+    path('ajustes/', views.ajustes, name='web-aju'),
+    path('nuevo_metodo_pago/', views.new_met_pago, name='web-np')
 ]
